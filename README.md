@@ -1,6 +1,7 @@
 Chapter 07 - Components in Vue JS
 
 - Class 01: Presentation components in Vue JS
+- Class 02: Components in Vue JS
  
 
 ## Technologies used
