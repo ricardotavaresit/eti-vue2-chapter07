@@ -8,17 +8,27 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   </head>
   <body>
-    <div id="app">
-      
+    <div id="app"> 
+      <my-component></my-component>
+      <my-component></my-component>
+      <my-component></my-component> 
     </div>
   </body>
 </html>
 
 <script>
+  Vue.component('my-component', {
+    template: ` <div>
+                  <p>My first component</p> 
+                  <child-component></child-component>
+                </div>`
+  }),
+
+  Vue.component('child-component', {
+    template: '<p>Child component</>'
+  });
+
   new Vue({
-    el: "#app",
-    data: {
-      
-    },
+    el: "#app"
   });
 </script>
